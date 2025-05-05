@@ -1,0 +1,14 @@
+[package]
+name = "blog_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix = "0.13.5"
+actix-web = "4.10.2"
+chrono = "0.4.22"
+diesel = { version = "2.2.8", features = ["postgres", "r2d2", "chrono"] }
+pq-sys = { version = "0.7.0", features = ["bundled"] }
+dotenv = "0.15.0"
+dotenvy = "0.15.7"
+serde = { version = "1.0.145", features = ["derive"] }
